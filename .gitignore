@@ -1,0 +1,3 @@
+*.log
+/.docker/node/.cache/*
+!/.docker/node/.cache/.gitkeep

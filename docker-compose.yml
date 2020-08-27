@@ -1,0 +1,13 @@
+version: "2"
+services:
+  node:
+    build: .docker/node
+    user: 1000:1000
+    working_dir: "/srv"
+    volumes:
+      - "./:/srv"
+      - "./.docker/node/.cache:/home/node/.cache"
+    environment:
+      PATH: "/srv/node_modules/.bin:$PATH"
+volumes:
+  yarn-cache:
