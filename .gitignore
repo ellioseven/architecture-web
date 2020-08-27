@@ -1,3 +1,4 @@
 *.log
+/node_modules
 /.docker/node/.cache/*
 !/.docker/node/.cache/.gitkeep
