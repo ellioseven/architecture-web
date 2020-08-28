@@ -8,7 +8,9 @@
     "@storybook/addons": "^5.3.21",
     "@storybook/react": "^5.3.21",
     "babel-loader": "^8.1.0",
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "dependencies": {
     "@ellioseven/design-system": "file:packages/design-system",
