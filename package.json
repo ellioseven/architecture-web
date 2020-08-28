@@ -1,7 +1,20 @@
 {
-  "name": "root",
+  "name": "@ellioseven/ellioseven",
   "private": true,
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@storybook/addon-actions": "^5.3.21",
+    "@storybook/addon-links": "^5.3.21",
+    "@storybook/addons": "^5.3.21",
+    "@storybook/react": "^5.3.21",
+    "babel-loader": "^8.1.0",
     "lerna": "^3.22.1"
+  },
+  "dependencies": {
+    "@ellioseven/design-system": "file:packages/design-system",
+    "@ellioseven/ui": "file:packages/ui"
+  },
+  "scripts": {
+    "setup": "npx lerna bootstrap"
   }
 }
