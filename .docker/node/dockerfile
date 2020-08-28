@@ -1,2 +1,4 @@
 FROM node:lts-alpine
-RUN apk add --no-cache git
+RUN apk add --no-cache bash git
+COPY init.sh /usr/local/bin
+ENTRYPOINT ["init.sh"]
