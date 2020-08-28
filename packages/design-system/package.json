@@ -1,5 +1,6 @@
 {
   "name": "@ellioseven/design-system",
+  "version": "0.0.0",
   "scripts": {
     "start": "start-storybook -p 4010",
     "build-storybook": "build-storybook"

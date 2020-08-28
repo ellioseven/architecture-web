@@ -1,6 +1,0 @@
-version: "2"
-services:
-  node:
-    environment:
-      GIT_USERNAME: "John Doe"
-      GIT_EMAIL: "john.doe@example.com"

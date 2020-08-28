@@ -1,5 +1,7 @@
 *.log
-docker-compose.override.yml
-/node_modules
-/.docker/node/.cache/*
-!/.docker/node/.cache/.gitkeep
+.env
+
+node_modules
+dist
+
+.cache

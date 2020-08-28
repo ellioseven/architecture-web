@@ -11,9 +11,11 @@ services:
       - "./.docker/node/.cache:/home/node/.cache"
     environment:
       PATH: "/srv/node_modules/.bin:$PATH"
+    env_file:
+      - .env
   design-system:
-    command: ["lerna", "run", "--scope", "@ellioseven/design-system", "--stream", "start"]
     extends:
       service: node
+    command: ["lerna", "run", "--scope", "@ellioseven/design-system", "--stream", "start"]
     ports:
       - 4010:4010

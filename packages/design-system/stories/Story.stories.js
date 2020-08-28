@@ -1,6 +1,6 @@
 import React from "react"
 import { Welcome } from "@storybook/react/demo"
-import { Logo } from "@ellioseven/ui/src/components/Logo"
+import { Logo } from "@ellioseven/ui"
 
 export default {
   title: "Welcome",

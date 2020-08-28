@@ -1,5 +1,3 @@
 import React from "react"
 
-const Logo = () => "ellioseven"
-
-export default Logo
+export const Logo = () => "ellioseven"
