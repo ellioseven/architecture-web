@@ -1,14 +1,15 @@
 import React from "react"
-import { Welcome } from "@storybook/react/demo"
 import { Logo } from "@ellioseven/ui"
 
 export default {
-  title: "Welcome",
-  component: Welcome,
+  title: "Logo",
+  component: Logo,
 }
 
-export const ToStorybook = () => <Logo />
+export const Default = args => <Logo { ...args } />
 
-ToStorybook.story = {
-  name: "to Storybook",
+Default.args = {
+  logo: {
+    name: "foo"
+  }
 }
