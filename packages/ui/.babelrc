@@ -1,7 +1,32 @@
 {
   "presets": [
-    ["@babel/env", { "modules": false }],
+    [
+      "@babel/env",
+      {
+        "modules": false
+      }
+    ],
     "@babel/react"
   ],
-  "plugins": ["@babel/plugin-transform-runtime"]
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    [
+      "styled-jsx/babel",
+      {
+        "plugins": [
+          [
+            "styled-jsx-plugin-sass",
+            {
+              "sassOptions": {
+                "includePaths": [
+                  "../../node_modules",
+                  "./src/scss"
+                ]
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  ]
 }

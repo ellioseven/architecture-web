@@ -24,7 +24,9 @@
     "react-dom": "^16.13.1",
     "rollup": "^2.26.6",
     "rollup-plugin-peer-deps-external": "^2.2.3",
-    "rollup-plugin-postcss": "^3.1.6",
+    "rollup-plugin-watch-transform": "^1.0.1",
+    "styled-jsx": "^3.3.0",
+    "styled-jsx-plugin-sass": "^1.0.0",
     "typescript": "~3.7.2"
   },
   "workspaces": [
