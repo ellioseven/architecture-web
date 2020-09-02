@@ -19,3 +19,9 @@ services:
     command: ["lerna", "run", "--scope", "@ellioseven/design-system", "--stream", "start"]
     ports:
       - 4010:4010
+  app:
+    extends:
+      service: node
+    command: ["lerna", "run", "--scope", "@ellioseven/app", "--stream", "dev"]
+    ports:
+      - 3000:3000
