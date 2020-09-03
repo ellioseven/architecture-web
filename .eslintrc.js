@@ -13,6 +13,9 @@ module.exports = {
   plugins: [
     "@babel"
   ],
+  globals: {
+    jest: "readonly"
+  },
   overrides: [
     {
       files: ["**/*.ts?(x)"],

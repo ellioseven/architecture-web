@@ -58,6 +58,8 @@
   ],
   "scripts": {
     "setup": "npx lerna bootstrap",
-    "test": "NODE_ENV=test jest ./packages"
+    "prepare": "yarn lint && yarn test",
+    "test": "NODE_ENV=test jest ./packages",
+    "lint": "eslint ./packages"
   }
 }
