@@ -9,7 +9,11 @@
     "target": "esnext",
     "module": "esnext",
     "strict": true,
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": "./src",
+    "paths": {
+      "services/*": ["services/*"]
+    }
   },
   "include": [
     "src"

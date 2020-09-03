@@ -7,6 +7,17 @@
   "plugins": [
     "@babel/plugin-transform-runtime",
     [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "alias": {
+          "services": "./src/services"
+        }
+      }
+    ],
+    [
       "styled-jsx/babel",
       {
         "plugins": [

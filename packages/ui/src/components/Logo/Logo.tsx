@@ -1,12 +1,13 @@
 import React from "react"
 import css from "styled-jsx/css"
+import { foo } from "services/foo"
 
-interface Foo {
-  foo: string
+interface Bar {
+  bar: string
 }
 
-const foo: Foo = {
-  foo: "foo"
+const bar: Bar = {
+  bar: "bar"
 }
 
 // language=scss
@@ -39,9 +40,12 @@ const Image = () => (
   </svg>
 )
 
-export const Logo = () => (
-  <div className="logo">
-    <Image />
-    <style jsx>{ style }</style>
-  </div>
-)
+export const Logo = () => {
+  foo()
+  return (
+    <div className="logo">
+      <Image />
+      <style jsx>{ style }</style>
+    </div>
+  )
+}
