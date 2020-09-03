@@ -4,7 +4,9 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
-    "build": "NODE_ENV=development rollup --config rollup.config.js"
+    "build": "yarn build:bundle && yarn build:types",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:bundle": "NODE_ENV=development rollup --config rollup.config.js"
   },
   "peerDependencies": {
     "@babel/runtime": "^7.11.0",

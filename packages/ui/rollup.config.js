@@ -5,13 +5,18 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external"
 import watch from "rollup-plugin-watch-transform"
 import pkg from "./package.json"
 
+const extensions = [
+  ".js", ".jsx", ".ts", ".tsx"
+]
+
 const plugins = [
-  resolve(),
+  resolve({ extensions }),
   peerDepsExternal(),
   watch({
     files: ["src/scss"]
   }),
   babel({
+    extensions,
     babelHelpers: "runtime"
   }),
   commonjs()
@@ -19,7 +24,7 @@ const plugins = [
 
 export default [
   {
-    input: "src/index.js",
+    input: "src/index.tsx",
     output: [
       {
         file: pkg.main,

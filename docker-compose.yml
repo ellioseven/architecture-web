@@ -4,8 +4,6 @@ services:
     build: .docker/node
     user: 1000:1000
     working_dir: "/srv"
-    stdin_open: true
-    tty: true
     volumes:
       - "./:/srv"
       - "./.docker/node/.cache:/home/node/.cache"

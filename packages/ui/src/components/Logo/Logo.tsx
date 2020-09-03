@@ -1,6 +1,14 @@
 import React from "react"
 import css from "styled-jsx/css"
 
+interface Foo {
+  foo: string
+}
+
+const foo: Foo = {
+  foo: "foo"
+}
+
 // language=scss
 const style = css`
   @import "mixins";
