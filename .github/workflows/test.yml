@@ -13,5 +13,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run : cp .env.example .env
-      - run: docker-compose run --rm node yarn setup
-      - run: docker-compose run --rm node yarn prepublish
+      - run: yarn setup
+      - run: yarn prepublish
