@@ -3,7 +3,7 @@ import { Logo } from "@ellioseven/ui"
 
 export default {
   title: "Logo",
-  component: Logo,
+  component: Logo
 }
 
 export const Default = args => <Logo { ...args } />
