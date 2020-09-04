@@ -1,7 +1,6 @@
 import babel from "@rollup/plugin-babel"
 import resolve from "@rollup/plugin-node-resolve"
 import commonjs from "@rollup/plugin-commonjs"
-import peerDepsExternal from "rollup-plugin-peer-deps-external"
 import watch from "rollup-plugin-watch-transform"
 import pkg from "./package.json"
 
@@ -11,7 +10,6 @@ const extensions = [
 
 const plugins = [
   resolve({ extensions }),
-  peerDepsExternal(),
   watch({
     files: ["src/scss"]
   }),
@@ -26,6 +24,11 @@ const plugins = [
 export default [
   {
     input: "src/index.tsx",
+    external: id => {
+      // Exclude all external dependencies.
+      // Local dependencies always begin with `.`, eg: `./components/Foo.js`.
+      return id[0] !== "."
+    },
     output: [
       {
         file: pkg.main,
