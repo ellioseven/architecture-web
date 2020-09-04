@@ -1,23 +1,14 @@
 {
+  "extends": "@ellioseven/config/tsconfig.base.json",
   "compilerOptions": {
-    "composite": true,
-    "allowJs": true,
-    "isolatedModules": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "declarationDir": "dist",
-    "declaration": true,
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "jsx": "react",
+    "declarationDir": "./dist",
     "baseUrl": "./src",
     "paths": {
       "@services/*": ["services/*"]
     }
   },
   "include": [
-    "src/**/*"
+    "src"
   ],
   "exclude": [
     "node_modules",
