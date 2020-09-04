@@ -1,10 +1,10 @@
 import React from "react"
-import { Foo } from "@ellioseven/ui"
+import { Logo } from "@ellioseven/ui"
 
 const Index = () => {
   return (
     <>
-      <Foo />
+      <Logo />
     </>
   )
 }

@@ -17,6 +17,7 @@ const plugins = [
   }),
   babel({
     extensions,
+    skipPreflightCheck: true,
     babelHelpers: "runtime"
   }),
   commonjs()
