@@ -16,6 +16,7 @@
                 {
                   "sassOptions": {
                     "includePaths": [
+                      "../../",
                       "../../node_modules",
                       "./src/scss"
                     ]
@@ -43,7 +44,7 @@
         ],
         "cwd": "babelrc",
         "alias": {
-          "services": "./src/services"
+          "@services": "./src/services"
         }
       }
     ]

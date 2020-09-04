@@ -1,1 +1,5 @@
+export * from "./components/Gist"
+export * from "./components/Global"
+export * from "./components/Lead"
 export * from "./components/Logo"
+export * from "./components/Meta"

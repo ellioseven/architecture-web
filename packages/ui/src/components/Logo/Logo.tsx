@@ -1,6 +1,6 @@
 import React from "react"
 import css from "styled-jsx/css"
-import { foo } from "services/foo"
+import { foo } from "@services/foo"
 
 // language=scss
 const style = css`

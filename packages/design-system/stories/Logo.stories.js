@@ -6,10 +6,8 @@ export default {
   component: Logo
 }
 
-export const Default = args => <Logo { ...args } />
+export const Default = args => (
+  <Logo { ...args } />
+)
 
-Default.args = {
-  logo: {
-    name: "foo"
-  }
-}
+Default.args = {}

@@ -1,3 +1,4 @@
+packages/design-system
 **/node_modules/*
 **/build/*
 **/coverage/*

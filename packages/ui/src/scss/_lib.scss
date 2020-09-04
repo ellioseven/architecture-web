@@ -1,0 +1,87 @@
+@import "breakpoint-sass/stylesheets/breakpoint";
+@import "sass-toolkit/stylesheets/toolkit";
+@import "compass-mixins/lib/compass";
+@import "sassdash/scss/sassdash";
+@import "sass-units-translate/sass/sass-units-translate";
+@import "type-heading/stylesheets/type-heading";
+
+$base-font-size: 16px;
+$base-line-height: 36px;
+$base-vertical-margin: $base-line-height;
+
+@include sut-core-set-base($base-font-size);
+
+$breakpoint-medium: em(768px, 16px);
+$breakpoint-medium-lower: em(768px - 1px, 16px);
+
+$breakpoint-large: em(1024px, 16px);
+$breakpoint-large-lower: em(1024px - 1px, 16px);
+
+$breakpoint-large-x: em(1366px, 16px);
+$breakpoint-large-x-lower: em(1366px - 1px, 16px);
+
+$breakpoint-map: (
+  $breakpoint-medium,
+  $breakpoint-large,
+  $breakpoint-large-x
+);
+
+$type-font-family-body: "DM Sans", Helvetica Neue, Helvetica, Arial, Liberation Sans, sans-serif;
+$type-font-family-display: $type-font-family-body;
+$type-font-family-mono: "Roboto Mono", monospace, monospace;
+
+$th-headings: (
+  walter: (48px 68px),
+  skyler: (36px 52px),
+  mike: (24px 38px),
+  pete: (21px 34px),
+  niki: (21px 48px),
+  marie: (18px 32px),
+  tuco: (16px 26px),
+  junior: (14px 20px),
+  saul: (12px 18px)
+);
+
+$th-base-font-size: $base-font-size;
+
+$th-property-units: (
+  font-size: rem,
+  line-height: rel,
+  margin-top: rem,
+  margin-bottom: rem
+);
+
+$th-property-defaults: (
+  font-size: $base-font-size,
+  line-height: $base-line-height,
+  margin-top: $base-vertical-margin,
+  margin-bottom: $base-vertical-margin
+);
+
+$color-white: #fff;
+$color-grey-abyss: #292c44;
+$color-grey-ash: #848294;
+$color-grey-cement: #ddd;
+$color-grey-steam: #f1f1f1;
+$color-grey-cloud: #f9f9f9;
+$color-black: #000;
+
+$color-blue-malibu: #4f80ee;
+$color-blue-electric: #007bff;
+$color-blue-sea: #17a2b8;
+$color-red-swiss: #ff4136;
+$color-red-blood: #dc3545;
+$color-orange-sun: #fd7e14;
+$color-yellow-lemon: #ffc107;
+$color-yellow-sand: #fefbd6;
+$color-green-retro: #18cdca;
+$color-green-invader: #20c997;
+$color-purple-royal: #3a3669;
+
+$color-brand-primary: $color-red-swiss;
+$color-brand-secondary: $color-green-invader;
+
+$color-body: $color-grey-ash;
+$color-display: $color-purple-royal;
+$color-link: $color-red-swiss;
+$color-link-hover: $color-grey-abyss;
